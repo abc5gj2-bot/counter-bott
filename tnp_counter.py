@@ -6,7 +6,7 @@ import discord
 from discord.ext import tasks
 from discord import app_commands
 
-TOKEN = "MTQ4MDU0MzQwNjU0Njc1MTYyMA.GblH0j.it-iY8tKuXOYQ2n87VELHfuAfSyduYHL6YpTq8"
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 
 TARGET_CHANNEL_ID = 1474732960719835327  # ←集計結果を送るチャンネルID
 DATA_FILE = "word_count.json"
